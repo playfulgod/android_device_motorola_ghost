@@ -27,12 +27,12 @@
 
 # mount point	fstype		device			[device2] [length=]
 
-/boot           emmc            boot
-/cache          ext4            cache
-/misc           emmc            misc
-/recovery       emmc            recovery
-/sdcard         vfat            /dev/block/mmcblk1p1    /dev/block/mmcblk1
-/data           f2fs            userdata                          length=-16384
-/system         ext4            system
-/modem          ext4            modem
-/customize      ext4            customize
+/dev/block/platform/msm_sdcc.1/by-name/boot           emmc            boot
+/dev/block/platform/msm_sdcc.1/by-name/cache          ext4            cache
+#/dev/block/platform/msm_sdcc.1/by-name/misc           emmc            misc
+/dev/block/platform/msm_sdcc.1/by-name/recovery       emmc            recovery
+/dev/block/platform/msm_sdcc.1/by-name/sdcard         vfat            /dev/block/mmcblk1p1    /dev/block/mmcblk1
+/dev/block/platform/msm_sdcc.1/by-name/data           f2fs            userdata                          length=-16384
+/dev/block/platform/msm_sdcc.1/by-name/system         ext4            system
+/dev/block/platform/msm_sdcc.1/by-name/modem          ext4            modem
+/dev/block/platform/msm_sdcc.1/by-name/customize      ext4            customize

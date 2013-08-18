@@ -8,7 +8,7 @@ PRODUCT_RELEASE_NAME := ghost
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/motorola/ghost/device_ghost.mk)
+$(call inherit-product, device/motorola/ghost/ghost.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ghost
