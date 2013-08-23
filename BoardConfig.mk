@@ -17,6 +17,9 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 
+#Thanks to JackpotClavin for bringing this point up in http://forum.xda-developers.com/showthread.php?p=44884904#post44884904
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02200000 
+
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x105c0000
