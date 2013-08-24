@@ -1,4 +1,3 @@
-# Copyright (c) 2011, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -27,12 +26,11 @@
 
 # mount point	fstype		device			[device2] [length=]
 
-/dev/block/platform/msm_sdcc.1/by-name/boot           emmc            boot
-/dev/block/platform/msm_sdcc.1/by-name/cache          ext4            cache
-#/dev/block/platform/msm_sdcc.1/by-name/misc           emmc            misc
-/dev/block/platform/msm_sdcc.1/by-name/recovery       emmc            recovery
-/dev/block/platform/msm_sdcc.1/by-name/sdcard         vfat            /dev/block/mmcblk1p1    /dev/block/mmcblk1
-/dev/block/platform/msm_sdcc.1/by-name/data           f2fs            userdata                          length=-16384
-/dev/block/platform/msm_sdcc.1/by-name/system         ext4            system
-/dev/block/platform/msm_sdcc.1/by-name/modem          ext4            modem
-/dev/block/platform/msm_sdcc.1/by-name/customize      ext4            customize
+/boot           emmc            /dev/block/platform/msm_sdcc.1/by-name/boot
+/cache          ext4            /dev/block/platform/msm_sdcc.1/by-name/cache
+/recovery       emmc            /dev/block/platform/msm_sdcc.1/by-name/recovery
+/sdcard         datamedia       /dev/null
+/data           f2fs            /dev/block/platform/msm_sdcc.1/by-name/userdata
+/system         ext4            /dev/block/platform/msm_sdcc.1/by-name/system
+/modem          ext4            /dev/block/platform/msm_sdcc.1/by-name/modem
+/customize      ext4            /dev/block/platform/msm_sdcc.1/by-name/customize
