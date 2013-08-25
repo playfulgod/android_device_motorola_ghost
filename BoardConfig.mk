@@ -30,3 +30,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_PREBUILT_KERNEL := device/motorola/ghost/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
+
+#Font size too small for 720p. Fixing.
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
