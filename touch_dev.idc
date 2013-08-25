@@ -11,22 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 #
-# Emulator keyboard configuration file #1.
-#
-
-device.internal = 1
 
 touch.deviceType = touchScreen
 touch.orientationAware = 1
-
-touch.size.calibration = diameter
-touch.size.scale = 22.5
-touch.size.bias = 0
-touch.size.isSummed = 0
-
-touch.pressure.calibration = amplitude
-touch.pressure.scale = 0.0125
-
-touch.orientation.calibration = none
