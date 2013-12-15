@@ -14,5 +14,5 @@ $(call inherit-product, device/motorola/ghost/ghost.mk)
 PRODUCT_DEVICE := ghost
 PRODUCT_NAME := cm_ghost
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := ghost
-PRODUCT_MANUFACTURER := motorola
+PRODUCT_MODEL := XT1060
+PRODUCT_MANUFACTURER := Motorola
